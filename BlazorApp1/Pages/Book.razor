@@ -1,0 +1,26 @@
+﻿@page "/book"
+
+<h1>Book</h1>
+
+<button @onclick="@Save" class="btn btn-info">"Kaydet"</button>
+
+<p>@Books</p>
+
+<BookDetail BookName ="Nutuk" Tikla="Save"></BookDetail>
+
+<p>Fonksiyon Mesajı: @Message</p>
+
+@code {
+    public string Books { get; set; }
+    private string Message;
+
+    protected override async Task OnInitializedAsync()
+    {
+        Books = "Nutuk, Suç Ve Ceza";
+    }
+
+    private void Save(MouseEventArgs e)
+    {
+        Message = "Kaydedildi...";
+    }
+}

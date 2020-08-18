@@ -1,0 +1,64 @@
+﻿@page "/productionCapacity"
+<h1>ProductionCapacity</h1>
+
+<div class="container">
+    <h4>Machine type: select</h4>
+    <p>The form below contains one dropdown menu (select lists):</p>
+    <form>
+        @*<div class="form-group">
+            <label for="sel1">Select list (select one):</label>
+            <select class="form-control" id="sel1">
+                <option>Skyreyper</option>
+                <option>Finisher</option>
+                <option>Forklit</option>
+                <option>Sondaj</option>
+            </select>
+            <br>
+            <h4>Date:</h4>
+            <input type="date" name="uretimtarihi" />
+            <br />
+            <br />
+            <button style="border-color: #2196F3;color: dodgerblue; padding: 14px 28px;font-size: 16px;" class="btn search" @onclick="GetDataGrid">Search</button>
+        </div>*@
+        
+        <div id style="height: 300px;width: 960px;margin-right: auto;margin-top: auto;background-color: #ffffff;">
+
+            <div class style="float: left;display: inline-block;height: 200px;width: 200px;margin: 10px;color: #FF0000;" id="div">
+                <label>Select list (select one):</label>
+                <select class="form-control">
+                    <option>Skyreyper</option>
+                    <option>Finisher</option>
+                    <option>Forklift</option>
+                    <option>Sondaj</option>
+                </select>
+            </div>
+
+
+            <div class style="float: left;display: inline-block;height: 200px;width: 300px;margin: 10px;color: #4B0082;" id="div2">
+                <label>Date:</label>
+                <input type="date" name="uretimtarihi" />
+            </div>
+
+            <button class="btn btn-primary" @onclick="Yazdir"> Search </button>
+            <p> Seçim Sonucu : @msg</p>
+            
+        </div>
+
+    </form>
+</div>
+
+<br />
+<form>
+    @*<h3>Date:</h3>
+        <input type="date" name="uretimtarihi" />*@
+</form>
+<br />
+
+@code
+{
+    private string msg;
+    private void Yazdir(MouseEventArgs e)
+    {
+        msg = "kaydedildi...";
+    }
+}

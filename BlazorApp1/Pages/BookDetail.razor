@@ -1,0 +1,16 @@
+﻿<h3>BookDetail</h3>
+
+<p>Book Name : @BookName</p>
+
+<hr />
+
+<button @onclik="Tikla" class="btn btn-primary"> Kaydet </button>
+
+<hr />
+@code {
+    [Parameter]
+    public string BookName { get; set; }
+
+    [Parameter]
+    public EventCallback<MouseEventArgs> Tikla { get; set; }
+}
