@@ -2,7 +2,7 @@
 @page "/todo"
 <h3>Todo</h3>
 <ul>
-    @foreach (var todo in todos)
+    @foreach (var todo in todos) 
     {
         <li>
             <input type="checkbox" @bind="todo.IsDone" />
@@ -13,16 +13,16 @@
 </ul>
 
 <input placeholder="Something todo" @bind="newTodo" />
-<button @onclick="AddTodo">Add todo</button>
+<button @onclick="AddTodo">Add todo</button> 
 
 @code
 {
-    private IList<TodoItem> todos = new List<TodoItem>();
+    private IList<TodoItem> todos = new List<TodoItem>(); // TodoItem sınıfı tanımlandı
     private string newTodo;
 
     private void AddTodo()
     {
-        if (!string.IsNullOrWhiteSpace(newTodo))
+        if (!string.IsNullOrWhiteSpace(newTodo)) // Listeye kaç adet görev girildiği saydırıldı
         {
             todos.Add(new TodoItem { Title = newTodo });
             newTodo = string.Empty;
