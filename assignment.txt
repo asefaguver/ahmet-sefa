@@ -1,2 +1,3 @@
 1-deneme test
-2- bu vs de yaz�ld�
+2- bu vs de yazıldı
+2- bu yazı gitte yazıldı
