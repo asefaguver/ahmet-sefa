@@ -1,28 +1,55 @@
 ﻿@page "/"
 
-<h1>Hello, world!</h1>
+    <div class="todo-container">
+        <h1>To Do List</h1>
+        <div class="todo-input">
+            <input type="text" @bind="todoInput" />
+            <button @onclick="AddTodo">Add</button>
+        </div>
 
-Welcome to your new app.
+        @for (int i = 0; i < todos.Count; i++)
+        {
+            var index = i;
+            var todo = todos[i];
+            <div class="todo-item">
+                <div class="todo-item__text">@todo</div>
+                <div class="todo-item__close" @onclick="@(() => RemoveTodo(index))">&times;</div>
 
-<SurveyPrompt Title="How is Blazor working for you?" />
-<br />
-<p>
-    Çarpma işlemi istemci tarafında C# ile yapılıyor.
-</p>
-<input id="a" @bind="@ilksayi" />
-<input id="b" @bind="@ikincisayi" />
+            </div>
+        }
+      
+    </div>
 
-<button class="btn btn-primary" @onclick="@ikiSayiCarpimi">İki Sayıyı Çarp</button>
+@*<p>
+        Çarpma işlemi istemci tarafında C# ile yapılıyor.
+    </p>
+    <input id="a" @bind="@ilksayi" />
+    <input id="b" @bind="@ikincisayi" />
 
-<p>Çarpım Sonucu: @carpim</p>
+    <button class="btn btn-primary" @onclick="@ikiSayiCarpimi">İki Sayıyı Çarp</button>
+
+    <p>Çarpım Sonucu: @carpim</p>*@
 
 @code{
-    public int ilksayi = 0;
-    public int ikincisayi = 0;
-    public int carpim = 0;
+    public string todoInput { get; set; }
+    public List<string> todos = new List<string>();
 
-    public void ikiSayiCarpimi()
+    public void AddTodo()
     {
-        carpim = ilksayi * ikincisayi;
+        todos.Add(todoInput);
+        todoInput = "";
     }
+    public void RemoveTodo(int index)
+    {
+        todos.RemoveAt(index);
+    }
+
+    //public int ilksayi = 0;
+    //public int ikincisayi = 0;
+    //public int carpim = 0;
+
+    //public void ikiSayiCarpimi()
+    //{
+    //    carpim = ilksayi * ikincisayi;
+    //}
 }

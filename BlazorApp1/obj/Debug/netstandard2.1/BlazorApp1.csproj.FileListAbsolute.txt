@@ -364,6 +364,8 @@ C:\Users\ahmet sefa\Desktop\örnek kodlar\BlazorApp1\BlazorApp1\obj\Debug\netsta
 C:\Users\ahmet sefa\Desktop\örnek kodlar\BlazorApp1\BlazorApp1\obj\Debug\netstandard2.1\Razor\Pages\ProductionCapacity.razor.g.cs
 C:\Users\ahmet sefa\Desktop\örnek kodlar\BlazorApp1\BlazorApp1\obj\Debug\netstandard2.1\RazorDeclaration\Pages\Utilization.razor.g.cs
 C:\Users\ahmet sefa\Desktop\örnek kodlar\BlazorApp1\BlazorApp1\obj\Debug\netstandard2.1\Razor\Pages\Utilization.razor.g.cs
-C:\Users\ahmet sefa\Desktop\örnek kodlar\BlazorApp1\BlazorApp1\obj\Debug\netstandard2.1\integrity\VvVK4JdLv1Z2ppHZyPFLZirfelvsKaR3W5i1AEC2iQE=.hash
-C:\Users\ahmet sefa\Desktop\örnek kodlar\BlazorApp1\BlazorApp1\obj\Debug\netstandard2.1\integrity\IVAs9LFG6rsZUNgd0qk9P2rKPOdUCvaj6bHHDQcYJtE=.hash
-C:\Users\ahmet sefa\Desktop\örnek kodlar\BlazorApp1\BlazorApp1\obj\Debug\netstandard2.1\integrity\qI9auJkgffPGx1bc0xwsdw3YIgz8pyUkAPsVYc6y7mQ=.hash
+C:\Users\ahmet sefa\Desktop\örnek kodlar\BlazorApp1\BlazorApp1\obj\Debug\netstandard2.1\RazorDeclaration\Pages\Todo.razor.g.cs
+C:\Users\ahmet sefa\Desktop\örnek kodlar\BlazorApp1\BlazorApp1\obj\Debug\netstandard2.1\Razor\Pages\Todo.razor.g.cs
+C:\Users\ahmet sefa\Desktop\örnek kodlar\BlazorApp1\BlazorApp1\obj\Debug\netstandard2.1\integrity\t6bEH2T9xdFWvVpMJpMF0XnlYUWpjSwf7inUpKAMpUU=.hash
+C:\Users\ahmet sefa\Desktop\örnek kodlar\BlazorApp1\BlazorApp1\obj\Debug\netstandard2.1\integrity\Rbhm0QO4DPnhvDNjNp7j9zpM6yjtUxZSn78HMVgGxGI=.hash
+C:\Users\ahmet sefa\Desktop\örnek kodlar\BlazorApp1\BlazorApp1\obj\Debug\netstandard2.1\integrity\Lxl_VJzR-8HRyUYb3b4m0LrlFA0byY2PV75fYYkp5nM=.hash

@@ -1,64 +1,71 @@
 ﻿@page "/productionCapacity"
-<h1>ProductionCapacity</h1>
 
-<div class="container">
-    <h4>Machine type: select</h4>
-    <p>The form below contains one dropdown menu (select lists):</p>
-    <form>
-        @*<div class="form-group">
-            <label for="sel1">Select list (select one):</label>
-            <select class="form-control" id="sel1">
-                <option>Skyreyper</option>
-                <option>Finisher</option>
-                <option>Forklit</option>
-                <option>Sondaj</option>
-            </select>
-            <br>
-            <h4>Date:</h4>
-            <input type="date" name="uretimtarihi" />
-            <br />
-            <br />
-            <button style="border-color: #2196F3;color: dodgerblue; padding: 14px 28px;font-size: 16px;" class="btn search" @onclick="GetDataGrid">Search</button>
-        </div>*@
-        
-        <div id style="height: 300px;width: 960px;margin-right: auto;margin-top: auto;background-color: #ffffff;">
 
-            <div class style="float: left;display: inline-block;height: 200px;width: 200px;margin: 10px;color: #FF0000;" id="div">
-                <label>Select list (select one):</label>
+<head>
+    @*<style>
+        .yuksek{
+            min-height:250px;
+        }
+        .button {
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            background-color: #008CBA;
+        }
+    </style>*@
+</head>
+<body>
+    <div class="container">  
+        <div class="row">
+            <div class="col-lg-3 col-md-6 col-sm-12">
+                <label> Machine:</label>
+                <br />
                 <select class="form-control">
-                    <option>Skyreyper</option>
-                    <option>Finisher</option>
-                    <option>Forklift</option>
-                    <option>Sondaj</option>
+                    <option selected>Open this select menu</option>
+                    <option>adadsa </option>
+                    <option>cvxvxvx </option>
+                    <option>xcvcxv </option>
+                    <option>sdfsdfdsf </option>
                 </select>
             </div>
+            <div class="col-lg-3 col-md-6 col-sm-12">
+                <br />
+                <input id="Checkbox1" type="checkbox" />
+                <label for="Checkbox1">asddfds </label>
 
+                <input id="Checkbox2" type="checkbox" />
+                <label for="Checkbox2">zcmzçxmc </label>
+                <br />
+                <input id="Checkbox3" type="checkbox" />
+                <label for="Checkbox3">fghhgfh </label>
 
-            <div class style="float: left;display: inline-block;height: 200px;width: 300px;margin: 10px;color: #4B0082;" id="div2">
-                <label>Date:</label>
-                <input type="date" name="uretimtarihi" />
+                <input id="Checkbox4" type="checkbox" />
+                <label for="Checkbox4">qweqwee </label>
+
             </div>
-
-            <button class="btn btn-primary" @onclick="Yazdir"> Search </button>
-            <p> Seçim Sonucu : @msg</p>
+            <div class="col-lg-3 col-md-6 col-sm-12">
+                <label>Date:</label>
+                <br>
+                <input type="date" class="form-control" name="uretimtarihi" />
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12">
+                <br />
+                <button type="button" class="btn btn-primary btn-lg">Save</button>
+            </div>
             
         </div>
+    </div>
 
-    </form>
-</div>
+</body>
 
-<br />
-<form>
-    @*<h3>Date:</h3>
-        <input type="date" name="uretimtarihi" />*@
-</form>
-<br />
 
 @code
 {
-    private string msg;
-    private void Yazdir(MouseEventArgs e)
-    {
-        msg = "kaydedildi...";
-    }
+
 }
